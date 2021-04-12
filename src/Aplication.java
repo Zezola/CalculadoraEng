@@ -15,6 +15,7 @@ public class Aplication {
 		opcao = in.nextShort();
 		
 		switch(opcao) {
+		
 		case 1:
 			double num1,  num2;
 			Somar result = new Somar();
@@ -24,6 +25,7 @@ public class Aplication {
 				num2 = in.nextDouble();
 				
 				System.out.println(result.somatorio(num1, num2));
+				
 			break;
 		}
 	}
