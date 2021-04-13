@@ -4,24 +4,16 @@ public class Aplication {
 	public static void main(String[] args) {
 
 		Scanner in = new Scanner(System.in);
+		
+		Menu menu = new Menu();
 
 		short opcao = 0;
+		int n = 0;
 		double num1 = 0, num2 = 0;
-
-		System.out.println("Escolha uma das opções abaixo");
-		System.out.println("1- Somar");
-		System.out.println("2- Subtrair");
-		System.out.println("3- Multiplicar");
-		System.out.println("4- Dividir");
-		System.out.println("5- Resto da divisão");
-		System.out.println("6 - Eleva ao quadrado");
-		System.out.println("7 - Eleva ao cubo");
-		System.out.println("8 - Exponenciaçao");
-		System.out.println("9 - Exponenciacao na base 10");
-		System.out.println("10 - Logaritmo na base 10");
-		System.out.println("11 - Logaritmo natural (base e)");
-		System.out.println("12 - Fatorial");
-		opcao = in.nextShort();
+		do {
+			opcao = menu.exibeMenu();
+		
+		
 
 		switch (opcao) {
 
@@ -141,8 +133,41 @@ public class Aplication {
 			num1 = in.nextDouble();
 			fat.fat((int)num1);
 			break;
-
+		
+		case 13:
+			Calcula mediaAritmetica = new Calcula();
+			System.out.println("Numero de elementos: ");
+			n = in.nextInt();
+			mediaAritmetica.mediaAritmetica(n);
+			break;
+		case 14:
+			Calcula seno = new Calcula();
+			System.out.println("Digite o cateto oposto");
+			num1 = in.nextDouble();
+			System.out.println("Digite a hipotenusa");
+			num2 = in.nextDouble();
+			seno.seno(num1, num2);
+			break;
+		case 15:
+			Calcula cosseno = new Calcula();
+			System.out.println("Digite o cateto adjacente");
+			num1 = in.nextDouble();
+			System.out.println("Digite a hipotenusa");
+			num2 = in.nextDouble();
+			cosseno.cosseno(num1, num2);
+			break;
+		case 16:
+			Calcula tangente = new Calcula();
+			System.out.println("Digite o cateto oposto");
+			num1 = in.nextDouble();
+			System.out.println("Digite o cateto adjacente");
+			num2 = in.nextDouble();
+			tangente.tangente(num1, num2);
+			break;
+			
 		}
+		
+		} while(opcao != 0);	
 
 	}
 }
