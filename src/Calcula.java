@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.*;
 
 
@@ -110,7 +111,7 @@ public class Calcula {
 		double soma = 0;
 		double media = 0;
 		for (int i = 0; i < n; i++) {
-			System.out.println("Digite o valor " +(i+1));
+			System.out.print("Digite o valor " +(i+1) +": ");
 			numeros[i] = in.nextDouble();
 			soma += numeros[i];
 		}
@@ -124,7 +125,6 @@ public class Calcula {
 	}
 	
 	public void seno(double catetoOposto, double hipotenusa) {
-		// sen(x) = cat.op / hip 
 		double sen = catetoOposto / hipotenusa;
 		
 		System.out.println();

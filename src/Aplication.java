@@ -11,10 +11,10 @@ public class Aplication {
 		int n = 0;
 		double num1 = 0, num2 = 0;
 		do {
+			
 			opcao = menu.exibeMenu();
 		
 		
-
 		switch (opcao) {
 
 		case 1:
@@ -80,7 +80,7 @@ public class Aplication {
 		case 6:
 			num1 = 0;
 			Calcula elevaAoQuadrado = new Calcula();
-			System.out.println("Valor que desejamos elevar ao quadrado: ");
+			System.out.print("Valor que desejamos elevar ao quadrado: ");
 			num1 = in.nextDouble();
 			
 			elevaAoQuadrado.elevaAoQuadrado(num1);
@@ -89,7 +89,7 @@ public class Aplication {
 		case 7:
 			num1 = 0;
 			Calcula elevaAoCubo = new Calcula();
-			System.out.println("Valor que desejamos elevar ao cubo:");
+			System.out.print("Valor que desejamos elevar ao cubo:");
 			num1 = in.nextDouble();
 			
 			elevaAoCubo.elevaAoCubo(num1);
@@ -98,9 +98,9 @@ public class Aplication {
 		case 8:
 			num1 = num2 = 0;
 			Calcula exponenciacao = new Calcula();
-			System.out.println("Base: ");
+			System.out.print("Base: ");
 			num1 = in.nextDouble();
-			System.out.println("Expoente: ");
+			System.out.print("Expoente: ");
 			num2 = in.nextDouble();
 			
 			exponenciacao.exponenciacao(num1, num2);
@@ -108,59 +108,59 @@ public class Aplication {
 		
 		case 9:
 			Calcula exponenciacaoBase10 = new Calcula();
-			System.out.println("Expoente: ");
+			System.out.print("Expoente: ");
 			num1 = in.nextDouble();
 			exponenciacaoBase10.exponenciacao(10, num1);
 			break;
 		
 		case 10:
 			Calcula logBase10 = new Calcula();
-			System.out.println("Logaritmando: ");
+			System.out.print("Logaritmando: ");
 			num1 = in.nextDouble();
 			logBase10.logBase10(num1);
 			break;
 		
 		case 11:
 			Calcula logNatural = new Calcula();
-			System.out.println("Logaritmando: ");
+			System.out.print("Logaritmando: ");
 			num1 = in.nextDouble();
 			logNatural.logNatural(num1);
 			break;
 			
 		case 12:
 			Calcula fat = new Calcula();
-			System.out.println("Fatorial de: ");
+			System.out.print("Fatorial de: ");
 			num1 = in.nextDouble();
 			fat.fat((int)num1);
 			break;
 		
 		case 13:
 			Calcula mediaAritmetica = new Calcula();
-			System.out.println("Numero de elementos: ");
+			System.out.print("Numero de elementos: ");
 			n = in.nextInt();
 			mediaAritmetica.mediaAritmetica(n);
 			break;
 		case 14:
 			Calcula seno = new Calcula();
-			System.out.println("Digite o cateto oposto");
+			System.out.print("Digite o cateto oposto");
 			num1 = in.nextDouble();
-			System.out.println("Digite a hipotenusa");
+			System.out.print("Digite a hipotenusa");
 			num2 = in.nextDouble();
 			seno.seno(num1, num2);
 			break;
 		case 15:
 			Calcula cosseno = new Calcula();
-			System.out.println("Digite o cateto adjacente");
+			System.out.print("Digite o cateto adjacente");
 			num1 = in.nextDouble();
-			System.out.println("Digite a hipotenusa");
+			System.out.print("Digite a hipotenusa");
 			num2 = in.nextDouble();
 			cosseno.cosseno(num1, num2);
 			break;
 		case 16:
 			Calcula tangente = new Calcula();
-			System.out.println("Digite o cateto oposto");
+			System.out.print("Digite o cateto oposto");
 			num1 = in.nextDouble();
-			System.out.println("Digite o cateto adjacente");
+			System.out.print("Digite o cateto adjacente");
 			num2 = in.nextDouble();
 			tangente.tangente(num1, num2);
 			break;
