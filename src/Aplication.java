@@ -14,6 +14,13 @@ public class Aplication {
 		System.out.println("3- Multiplicar");
 		System.out.println("4- Dividir");
 		System.out.println("5- Resto da divisão");
+		System.out.println("6 - Eleva ao quadrado");
+		System.out.println("7 - Eleva ao cubo");
+		System.out.println("8 - Exponenciaçao");
+		System.out.println("9 - Exponenciacao na base 10");
+		System.out.println("10 - Logaritmo na base 10");
+		System.out.println("11 - Logaritmo natural (base e)");
+		System.out.println("12 - Fatorial");
 		opcao = in.nextShort();
 
 		switch (opcao) {
@@ -76,6 +83,63 @@ public class Aplication {
 
 			restoDivisao.restoDivisao(num1, num2);
 
+			break;
+			
+		case 6:
+			num1 = 0;
+			Calcula elevaAoQuadrado = new Calcula();
+			System.out.println("Valor que desejamos elevar ao quadrado: ");
+			num1 = in.nextDouble();
+			
+			elevaAoQuadrado.elevaAoQuadrado(num1);
+			break;
+		
+		case 7:
+			num1 = 0;
+			Calcula elevaAoCubo = new Calcula();
+			System.out.println("Valor que desejamos elevar ao cubo:");
+			num1 = in.nextDouble();
+			
+			elevaAoCubo.elevaAoCubo(num1);
+			break;
+		
+		case 8:
+			num1 = num2 = 0;
+			Calcula exponenciacao = new Calcula();
+			System.out.println("Base: ");
+			num1 = in.nextDouble();
+			System.out.println("Expoente: ");
+			num2 = in.nextDouble();
+			
+			exponenciacao.exponenciacao(num1, num2);
+			break;		
+		
+		case 9:
+			Calcula exponenciacaoBase10 = new Calcula();
+			System.out.println("Expoente: ");
+			num1 = in.nextDouble();
+			exponenciacaoBase10.exponenciacao(10, num1);
+			break;
+		
+		case 10:
+			Calcula logBase10 = new Calcula();
+			System.out.println("Logaritmando: ");
+			num1 = in.nextDouble();
+			logBase10.logBase10(num1);
+			break;
+		
+		case 11:
+			Calcula logNatural = new Calcula();
+			System.out.println("Logaritmando: ");
+			num1 = in.nextDouble();
+			logNatural.logNatural(num1);
+			break;
+			
+		case 12:
+			Calcula fat = new Calcula();
+			System.out.println("Fatorial de: ");
+			num1 = in.nextDouble();
+			fat.fat((int)num1);
 			break;
 
 		}
