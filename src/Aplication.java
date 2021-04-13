@@ -17,6 +17,7 @@ public class Aplication {
 		switch(opcao) {
 		
 		case 1:
+			
 			double num1,  num2;
 			Somar result = new Somar();
 				System.out.print("Primeiro valor: ");
