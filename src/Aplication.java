@@ -136,10 +136,10 @@ public class Aplication {
 			break;
 			
 		case 12:
-			Calcula fat = new Calcula();
+			Calcula fatorial = new Calcula();
 			System.out.println("Fatorial de: ");
 			num1 = in.nextDouble();
-			fat.fat((int)num1);
+			fatorial.fatorial((int)num1);
 			break;
 
 		}
