@@ -30,7 +30,7 @@ public class Calcula {
 		result = num1 * num2;
 		
 		System.out.println();
-		System.out.println(result);
+		System.out.println(num1 +" * " +num2+ " = " +result);
 		System.out.println();
 	}
 	
@@ -50,7 +50,7 @@ public class Calcula {
 		result = num1 % num2;
 		
 		System.out.println();
-		System.out.println(result);
+		System.out.println("Resto da divisao de " +num1+ " por " +num2+ " = " +result);
 		System.out.println();
 	}
 	
@@ -58,7 +58,7 @@ public class Calcula {
 		double result = Math.pow(num1, 2);
 		
 		System.out.println();
-		System.out.println(result);
+		System.out.println(num1 + " elevado ao quadrado = " +result);
 		System.out.println();
 	}
 	
@@ -66,7 +66,7 @@ public class Calcula {
 		double result = Math.pow(num1, 3);
 		
 		System.out.println();
-		System.out.println(result);
+		System.out.println(num1 + " elevado ao cubo = " +result);
 		System.out.println();
 	}
 	
@@ -74,7 +74,7 @@ public class Calcula {
 		double result = Math.pow(num1, num2);
 		
 		System.out.println();
-		System.out.println(result);
+		System.out.println(num1 + " elevado a "+num2+ " = " +result);
 		System.out.println();
 	}
 	
@@ -82,7 +82,7 @@ public class Calcula {
 		double result = Math.log10(num1);
 		
 		System.out.println();
-		System.out.println(result);
+		System.out.println("Logaritmo de " +num1+ " na base 10 = " +result);
 		System.out.println();
 	}
 	
@@ -90,7 +90,7 @@ public class Calcula {
 		double result = Math.log(num1);
 		
 		System.out.println();
-		System.out.println(result);
+		System.out.println("Logaritmo natural de " +num1+ " = " +result);
 		System.out.println();
 	}
 	
@@ -102,7 +102,7 @@ public class Calcula {
 		}
 		
 		System.out.println();
-		System.out.println(fat);
+		System.out.println(num1+"! = " +fat);
 		System.out.println();
 	}
 	
@@ -118,7 +118,7 @@ public class Calcula {
 		media = soma / n;
 		
 		System.out.println();
-		System.out.println(media);	
+		System.out.println("Media aritmetica = " +media);	
 		System.out.println();
 		
 		
@@ -128,7 +128,7 @@ public class Calcula {
 		double sen = catetoOposto / hipotenusa;
 		
 		System.out.println();
-		System.out.println(sen + "°");
+		System.out.println("seno = " +sen + "°");
 		System.out.println();
 	}
 	
@@ -136,7 +136,7 @@ public class Calcula {
 		double cos = catetoAdj / hipotenusa; 
 		
 		System.out.println();
-		System.out.println(cos + "°");
+		System.out.println("cosseno = " +cos + "°");
 		System.out.println();
 		
 	}
@@ -145,7 +145,7 @@ public class Calcula {
 		double tangente = catetoOposto / catetoAdj;
 		
 		System.out.println();
-		System.out.println(tangente + "°");
+		System.out.println("tangente =" +tangente + "°");
 		System.out.println();
 	}
 	
