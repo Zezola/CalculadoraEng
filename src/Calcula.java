@@ -93,7 +93,7 @@ public class Calcula {
 		System.out.println();
 	}
 	
-	public void fat(int num1) {
+	public void fatorial(int num1) {
 		int fat = 1;
 		while (num1 > 0) {
 			fat *= num1;
