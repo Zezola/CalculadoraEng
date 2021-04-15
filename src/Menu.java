@@ -1,9 +1,12 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Menu {
-	public short exibeMenu() {
+	public short exibeMenu() throws IOException {
 		short opcao = 0;
 		Scanner in = new Scanner(System.in);
+		Pausar pausar = new Pausar();
+		LimparTela limparTela = new LimparTela();
 		
 		System.out.println("0 - Sair");
 		System.out.println("1- Somar \t\t\t  2- Subtrair");
@@ -17,6 +20,8 @@ public class Menu {
 		System.out.print("\nEscolha uma das opções: ");
 				
 		opcao = in.nextShort();
+		
+		limparTela.limparTela();
 		
 		return opcao;
 	}
