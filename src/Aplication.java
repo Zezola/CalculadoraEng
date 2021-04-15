@@ -10,7 +10,7 @@ public class Aplication {
 
 		short opcao = 0;
 		int n = 0;
-		double num1 = 0, num2 = 0;
+		double num1 = 0, num2 = 0, num3 = 0;
 		do {
 			
 			opcao = menu.exibeMenu();
@@ -167,7 +167,24 @@ public class Aplication {
 			tangente.tangente(num1, num2);
 			break;
 			
+		case 17:
+			
+			Calcula equacaoPrimeiroGrau = new Calcula();
+			
+			System.out.println("Formula: ax + b = y\n");
+			System.out.print("Digite o valor de a: ");
+			num1 = in.nextDouble();
+			System.out.print("Digite o valor de b: ");
+			num2 = in.nextDouble();
+			System.out.print("Digite o valor de y: ");
+			num3 = in.nextDouble();
+			
+			equacaoPrimeiroGrau.equacaoPrimeiroGrau(num1, num2, num3);
+			
+			break;
+			
 		}
+
 				
 		} while(opcao != 0);
 	}
