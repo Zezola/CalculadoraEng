@@ -10,7 +10,7 @@ public class Aplication {
 
 		short opcao = 0;
 		int n = 0;
-		double num1 = 0, num2 = 0;
+		double num1 = 0, num2 = 0, num3 = 0;
 		do {
 			
 			opcao = menu.exibeMenu();
@@ -166,8 +166,23 @@ public class Aplication {
 			num2 = in.nextDouble();
 			tangente.tangente(num1, num2);
 			break;
+		
+		case 18: 
+			Calcula equacaoSegundoGrau = new Calcula();
+			System.out.println("Formula geral: ax² + bx + c = 0");
+			System.out.print("Entre com o coeficiente a: ");
+			num1 = in.nextDouble();
+			System.out.print("Entre com o coeficiente b: ");
+			num2 = in.nextDouble();
+			System.out.print("Entre com o coeficiente c: ");
+			num3 = in.nextDouble();
+			equacaoSegundoGrau.equacaoSegundoGrau(num1, num2, num3);
+			break;
 			
 		}
+		
+		
+			
 				
 		} while(opcao != 0);
 	}
