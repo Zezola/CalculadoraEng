@@ -115,15 +115,21 @@ public class Calcula {
 		limparTela.limparTela();
 	}
 	
-	public void fatorial(int num1) throws IOException {
+	public void fatorial(double num1) throws IOException {
 		int fat = 1;
+		int aux = (int)num1;
 		while (num1 > 0) {
+			if (num1 == 0) {
+				num1 = 1;
+			}
 			fat *= num1;
 			num1 -= 1;
+			
+			
 		}
 		
 		System.out.println();
-		System.out.println(num1+"! = " +fat);
+		System.out.println(aux+"! = " +fat);
 		System.out.println();
 		pausar.pausar();
 		limparTela.limparTela();
@@ -174,7 +180,7 @@ public class Calcula {
 		double tangente = catetoOposto / catetoAdj;
 		
 		System.out.println();
-		System.out.println("tangente =" +tangente + "°");
+		System.out.println("tangente = " +tangente + "°");
 		System.out.println();
 		pausar.pausar();
 		limparTela.limparTela();

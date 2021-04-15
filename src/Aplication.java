@@ -133,7 +133,7 @@ public class Aplication {
 			Calcula fatorial = new Calcula();
 			System.out.println("Fatorial de: ");
 			num1 = in.nextDouble();
-			fatorial.fatorial((int)num1);
+			fatorial.fatorial(num1);
 			break;
 		
 		case 13:
@@ -144,25 +144,25 @@ public class Aplication {
 			break;
 		case 14:
 			Calcula seno = new Calcula();
-			System.out.print("Digite o cateto oposto");
+			System.out.print("Digite o cateto oposto: ");
 			num1 = in.nextDouble();
-			System.out.print("Digite a hipotenusa");
+			System.out.print("Digite a hipotenusa: ");
 			num2 = in.nextDouble();
 			seno.seno(num1, num2);
 			break;
 		case 15:
 			Calcula cosseno = new Calcula();
-			System.out.print("Digite o cateto adjacente");
+			System.out.print("Digite o cateto adjacente: ");
 			num1 = in.nextDouble();
-			System.out.print("Digite a hipotenusa");
+			System.out.print("Digite a hipotenusa: ");
 			num2 = in.nextDouble();
 			cosseno.cosseno(num1, num2);
 			break;
 		case 16:
 			Calcula tangente = new Calcula();
-			System.out.print("Digite o cateto oposto");
+			System.out.print("Digite o cateto oposto: ");
 			num1 = in.nextDouble();
-			System.out.print("Digite o cateto adjacente");
+			System.out.print("Digite o cateto adjacente: ");
 			num2 = in.nextDouble();
 			tangente.tangente(num1, num2);
 			break;
