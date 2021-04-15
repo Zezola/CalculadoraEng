@@ -182,6 +182,19 @@ public class Aplication {
 			equacaoPrimeiroGrau.equacaoPrimeiroGrau(num1, num2, num3);
 			
 			break;
+		
+		case 18: 
+			Calcula equacaoSegundoGrau = new Calcula();
+			System.out.println("Formula geral: ax² + bx + c = 0\n");
+			System.out.print("Entre com o coeficiente a: ");
+			num1 = in.nextDouble();
+			System.out.print("Entre com o coeficiente b: ");
+			num2 = in.nextDouble();
+			System.out.print("Entre com o coeficiente c: ");
+			num3 = in.nextDouble();
+			equacaoSegundoGrau.equacaoSegundoGrau(num1, num2, num3);
+			break;
+			
 			
 		}
 
