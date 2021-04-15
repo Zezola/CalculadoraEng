@@ -8,7 +8,7 @@ public class Menu {
 		Pausar pausar = new Pausar();
 		LimparTela limparTela = new LimparTela();
 		System.out.println("+-------------------------------------------------------------+");
-		System.out.println("| 0 - Sair \t\t\t\t\t\t      |");
+		System.out.println("| 0- Sair \t\t\t\t\t\t      |");
 		System.out.println("| 1- Somar  \t\t\t\t\t  2- Subtrair |");
 		System.out.println("| 3- Multiplicar \t\t\t\t   4- Dividir |");
 		System.out.println("| 5- Resto da divisão \t\t\t 6- Eleva ao quadrado |");
