@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.*;
 
 
-public class Calcula {
+public class Calculadora {
 	
 	Scanner in = new Scanner(System.in);
 	Pausar pausar = new Pausar();
@@ -46,7 +46,7 @@ public class Calcula {
 		limparTela.limparTela();
 	}
 	
-	public void divisao(double num1, double num2) {
+	public void divisao(double num1, double num2) throws IOException {
 		
 		double result;
 		
@@ -55,6 +55,8 @@ public class Calcula {
 		System.out.println();
 		System.out.println("\n"+num1 +" / " +num2+ " = " +result+"\n");
 		System.out.println();
+		pausar.pausar();
+		limparTela.limparTela();
 	}
 	
 	public void restoDivisao(double num1, double num2) throws IOException {
@@ -92,7 +94,7 @@ public class Calcula {
 		limparTela.limparTela();
 	}
 	
-	public void exponenciacao(double num1, double num2) throws IOException {
+	public void exponenciar(double num1, double num2) throws IOException {
 		
 		double result = Math.pow(num1, num2);
 		
