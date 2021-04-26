@@ -1,3 +1,2 @@
-/LimparTela.class
-/Menu.class
-/Pausar.class
+../bin/
+*.class
