@@ -19,7 +19,6 @@ public class Aplication {
 		switch (opcao) {
 
 		case 1:
-
 			Calcula somar = new Calcula();
 			System.out.print("Primeiro valor: ");
 			num1 = in.nextDouble();
@@ -30,7 +29,6 @@ public class Aplication {
 			break;
 
 		case 2:
-
 			Calcula subtracao = new Calcula();
 			System.out.print("Primeiro valor: ");
 			num1 = in.nextDouble();
@@ -43,7 +41,6 @@ public class Aplication {
 			break;
 
 		case 3:
-
 			Calcula multiplica = new Calcula();
 			System.out.print("Primeiro valor: ");
 			num1 = in.nextDouble();
@@ -55,7 +52,6 @@ public class Aplication {
 			break;
 
 		case 4:
-
 			Calcula dividir = new Calcula();
 			System.out.print("Primeiro valor: ");
 			num1 = in.nextDouble();
@@ -67,7 +63,6 @@ public class Aplication {
 			break;
 
 		case 5:
-
 			Calcula restoDivisao = new Calcula();
 			System.out.print("Primeiro valor: ");
 			num1 = in.nextDouble();
@@ -129,7 +124,6 @@ public class Aplication {
 			break;
 			
 		case 12:
-
 			Calcula fatorial = new Calcula();
 			System.out.println("Fatorial de: ");
 			num1 = in.nextDouble();
@@ -142,6 +136,7 @@ public class Aplication {
 			n = in.nextInt();
 			mediaAritmetica.mediaAritmetica(n);
 			break;
+			
 		case 14:
 			Calcula seno = new Calcula();
 			System.out.print("Digite o cateto oposto: ");
@@ -150,6 +145,7 @@ public class Aplication {
 			num2 = in.nextDouble();
 			seno.seno(num1, num2);
 			break;
+			
 		case 15:
 			Calcula cosseno = new Calcula();
 			System.out.print("Digite o cateto adjacente: ");
@@ -158,6 +154,7 @@ public class Aplication {
 			num2 = in.nextDouble();
 			cosseno.cosseno(num1, num2);
 			break;
+			
 		case 16:
 			Calcula tangente = new Calcula();
 			System.out.print("Digite o cateto oposto: ");
@@ -167,25 +164,21 @@ public class Aplication {
 			tangente.tangente(num1, num2);
 			break;
 			
-		case 17:
-			
-			Calcula equacaoPrimeiroGrau = new Calcula();
-			
-			System.out.println("Formula: ax + b = y\n");
-			System.out.print("Digite o valor de a: ");
-			num1 = in.nextDouble();
-			System.out.print("Digite o valor de b: ");
-			num2 = in.nextDouble();
-			System.out.print("Digite o valor de y: ");
-			num3 = in.nextDouble();
-			
-			equacaoPrimeiroGrau.equacaoPrimeiroGrau(num1, num2, num3);
-			
-			break;
+		case 17:                          
+			Calcula equacaoPrimeiroGrau = new Calcula();                          
+			System.out.println("Formula: ax + b = y\n");             
+			System.out.print("Digite o valor de a: ");             
+			num1 = in.nextDouble();             
+			System.out.print("Digite o valor de b: ");             
+			num2 = in.nextDouble();             
+			System.out.print("Digite o valor de y: ");             
+			num3 = in.nextDouble();                          
+			equacaoPrimeiroGrau.equacaoPrimeiroGrau(num1, num2, num3);                          
+			break;	
 		
 		case 18: 
 			Calcula equacaoSegundoGrau = new Calcula();
-			System.out.println("Formula geral: ax² + bx + c = 0\n");
+			System.out.println("Formula geral: ax² + bx + c = 0");
 			System.out.print("Entre com o coeficiente a: ");
 			num1 = in.nextDouble();
 			System.out.print("Entre com o coeficiente b: ");
