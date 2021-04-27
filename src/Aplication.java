@@ -139,54 +139,27 @@ public class Aplication {
 			
 		case 14:
 			Calcula seno = new Calcula();
-			System.out.print("Digite o cateto oposto: ");
+			System.out.print("Digite o angulo: ");
 			num1 = in.nextDouble();
-			System.out.print("Digite a hipotenusa: ");
-			num2 = in.nextDouble();
-			seno.seno(num1, num2);
+			
+			seno.seno(num1);
 			break;
 			
 		case 15:
 			Calcula cosseno = new Calcula();
-			System.out.print("Digite o cateto adjacente: ");
+			System.out.print("Digite o angulo: ");
 			num1 = in.nextDouble();
-			System.out.print("Digite a hipotenusa: ");
-			num2 = in.nextDouble();
-			cosseno.cosseno(num1, num2);
+			cosseno.cosseno(num1);
 			break;
 			
 		case 16:
 			Calcula tangente = new Calcula();
-			System.out.print("Digite o cateto oposto: ");
+			System.out.print("Digite o angulo: ");
 			num1 = in.nextDouble();
-			System.out.print("Digite o cateto adjacente: ");
-			num2 = in.nextDouble();
-			tangente.tangente(num1, num2);
+			tangente.tangente(num1);
 			break;
 			
-		case 17:                          
-			Calcula equacaoPrimeiroGrau = new Calcula();                          
-			System.out.println("Formula: ax + b = y\n");             
-			System.out.print("Digite o valor de a: ");             
-			num1 = in.nextDouble();             
-			System.out.print("Digite o valor de b: ");             
-			num2 = in.nextDouble();             
-			System.out.print("Digite o valor de y: ");             
-			num3 = in.nextDouble();                          
-			equacaoPrimeiroGrau.equacaoPrimeiroGrau(num1, num2, num3);                          
-			break;	
 		
-		case 18: 
-			Calcula equacaoSegundoGrau = new Calcula();
-			System.out.println("Formula geral: ax² + bx + c = 0");
-			System.out.print("Entre com o coeficiente a: ");
-			num1 = in.nextDouble();
-			System.out.print("Entre com o coeficiente b: ");
-			num2 = in.nextDouble();
-			System.out.print("Entre com o coeficiente c: ");
-			num3 = in.nextDouble();
-			equacaoSegundoGrau.equacaoSegundoGrau(num1, num2, num3);
-			break;
 			
 			
 		}

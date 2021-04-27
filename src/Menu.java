@@ -17,7 +17,6 @@ public class Menu {
 		System.out.println("| 11- Logaritmo natural (base e) \t\t 12- Fatorial |");
 		System.out.println("| 13- Media Aritmetica \t\t\t\t     14- Seno |");
 		System.out.println("| 15- Cosseno \t\t\t\t\t 16- Tangente |");
-		System.out.println("| 17- Equacao do primeiro grau \t  18- Equacao do segundo grau |");
 		System.out.println("+-------------------------------------------------------------+");
 		System.out.print("\n \t\t     Escolha uma das opções:  ");
 				
