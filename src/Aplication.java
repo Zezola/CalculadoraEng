@@ -139,29 +139,24 @@ public class Aplication {
 			
 		case 14:
 			Calcula seno = new Calcula();
-			System.out.print("Digite o cateto oposto: ");
+			System.out.print("Digite o angulo: ");
 			num1 = in.nextDouble();
-			System.out.print("Digite a hipotenusa: ");
-			num2 = in.nextDouble();
-			seno.seno(num1, num2);
+			
+			seno.seno(num1);
 			break;
 			
 		case 15:
 			Calcula cosseno = new Calcula();
-			System.out.print("Digite o cateto adjacente: ");
+			System.out.print("Digite o angulo: ");
 			num1 = in.nextDouble();
-			System.out.print("Digite a hipotenusa: ");
-			num2 = in.nextDouble();
-			cosseno.cosseno(num1, num2);
+			cosseno.cosseno(num1);
 			break;
 			
 		case 16:
 			Calcula tangente = new Calcula();
-			System.out.print("Digite o cateto oposto: ");
+			System.out.print("Digite o angulo: ");
 			num1 = in.nextDouble();
-			System.out.print("Digite o cateto adjacente: ");
-			num2 = in.nextDouble();
-			tangente.tangente(num1, num2);
+			tangente.tangente(num1);
 			break;
 			
 		

@@ -167,9 +167,9 @@ public class Calcula {
 		
 	}
 	
-	public void seno(double catetoOposto, double hipotenusa) throws IOException {
+	public void seno(double angle) throws IOException {
 		
-		double sen = catetoOposto / hipotenusa;
+		double sen = Math.sin(Math.toRadians(angle));
 		
 		System.out.println();
 		System.out.println("\nseno = " +sen + "°\n");
@@ -178,9 +178,9 @@ public class Calcula {
 		limparTela.limparTela();
 	}
 	
-	public void cosseno(double catetoAdj, double hipotenusa) throws IOException {
+	public void cosseno(double angle) throws IOException {
 		
-		double cos = catetoAdj / hipotenusa; 
+		double cos = Math.cos(Math.toRadians(angle)); 
 		
 		System.out.println();
 		System.out.println("\n cosseno = " +cos + "°\n");
@@ -190,9 +190,9 @@ public class Calcula {
 		
 	}
 	
-	public void tangente(double catetoOposto, double catetoAdj) throws IOException {
+	public void tangente(double angle) throws IOException {
 		
-		double tangente = catetoOposto / catetoAdj;
+		double tangente = Math.tan(Math.toRadians(angle));
 		
 		System.out.println();
 		System.out.println("\ntangente = " +tangente + "°\n");
