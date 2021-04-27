@@ -164,29 +164,7 @@ public class Aplication {
 			tangente.tangente(num1, num2);
 			break;
 			
-		case 17:                          
-			Calcula equacaoPrimeiroGrau = new Calcula();                          
-			System.out.println("Formula: ax + b = y\n");             
-			System.out.print("Digite o valor de a: ");             
-			num1 = in.nextDouble();             
-			System.out.print("Digite o valor de b: ");             
-			num2 = in.nextDouble();             
-			System.out.print("Digite o valor de y: ");             
-			num3 = in.nextDouble();                          
-			equacaoPrimeiroGrau.equacaoPrimeiroGrau(num1, num2, num3);                          
-			break;	
 		
-		case 18: 
-			Calcula equacaoSegundoGrau = new Calcula();
-			System.out.println("Formula geral: ax² + bx + c = 0");
-			System.out.print("Entre com o coeficiente a: ");
-			num1 = in.nextDouble();
-			System.out.print("Entre com o coeficiente b: ");
-			num2 = in.nextDouble();
-			System.out.print("Entre com o coeficiente c: ");
-			num3 = in.nextDouble();
-			equacaoSegundoGrau.equacaoSegundoGrau(num1, num2, num3);
-			break;
 			
 			
 		}
