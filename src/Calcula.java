@@ -201,7 +201,7 @@ public class Calcula {
 		limparTela.limparTela();
 	}
 	
-
+	/*
 	public void equacaoPrimeiroGrau(double a, double b, double y) throws IOException {
 		double x = 0;
 		b = -1 * b;
@@ -213,6 +213,7 @@ public class Calcula {
 		limparTela.limparTela();
 	}
 
+	
 	public void equacaoSegundoGrau(double a, double b, double c) throws IOException {
 		double delta = Math.pow(b, 2) - 4 * a * c;
 		double x1 = 0, x2 = 0;
@@ -224,7 +225,7 @@ public class Calcula {
 			x2 = (-b + Math.sqrt(delta))/2*a;
 			System.out.println("x1 = " +x1);
 			System.out.println("x2 = " +x2);
-		}
+		} 
 		
 		
 		pausar.pausar();
@@ -232,7 +233,7 @@ public class Calcula {
 
 		
 	}
-	
+	*/
 	
 
 }
