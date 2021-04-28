@@ -5,20 +5,15 @@ import java.util.*;
 public class Calcula {
 	
 	Scanner in = new Scanner(System.in);
-	Pausar pausar = new Pausar();
-	LimparTela limparTela = new LimparTela();
+	
+	Imprimir imprimir = new Imprimir();
 	
 	public void somar(double num1, double num2) throws IOException {
 		
-		double result;
-		
-				
+		double result;			
 		result = num1 + num2;
-		System.out.println();
-		System.out.println("\n"+num1+ " + " +num2+ " = " +result+"\n");
-		System.out.println();
-		pausar.pausar();
-		limparTela.limparTela();
+		imprimir.imprimir(result);
+		
 	}
 	
 	public void subtrair(double num1, double num2) throws IOException {
@@ -26,11 +21,8 @@ public class Calcula {
 		double result;
 		
 		result = num1 - num2;
-		System.out.println();
-		System.out.println("\n"+num1 +" - " +num2+ " = " +result+"\n");
-		System.out.println();
-		pausar.pausar();
-		limparTela.limparTela();
+		imprimir.imprimir(result);
+
 	}
 	
 	public void multiplicar(double num1, double num2) throws IOException {
@@ -39,11 +31,7 @@ public class Calcula {
 		
 		result = num1 * num2;
 		
-		System.out.println();
-		System.out.println("\n"+num1 +" * " +num2+ " = " +result+"\n");
-		System.out.println();
-		pausar.pausar();
-		limparTela.limparTela();
+		imprimir.imprimir(result);
 	}
 	
 	public void divisao(double num1, double num2) {
@@ -63,66 +51,42 @@ public class Calcula {
 		
 		result = num1 % num2;
 		
-		System.out.println();
-		System.out.println("\nResto da divisao de " +num1+ " por " +num2+ " = " +result+"\n");
-		System.out.println();
-		pausar.pausar();
-		limparTela.limparTela();
+		imprimir.imprimir(result);
 	}
 	
 	public void elevaAoQuadrado(double num1) throws IOException {
 		
 		double result = Math.pow(num1, 2);
 		
-		System.out.println();
-		System.out.println("\n"+num1 + " elevado ao quadrado = " +result+"\n");
-		System.out.println();
-		pausar.pausar();
-		limparTela.limparTela();
+		imprimir.imprimir(result);
 	}
 	
 	public void elevaAoCubo(double num1) throws IOException {
 		
 		double result = Math.pow(num1, 3);
 		
-		System.out.println();
-		System.out.println("\n"+num1 + " elevado ao cubo = " +result+"\n");
-		System.out.println();
-		pausar.pausar();
-		limparTela.limparTela();
+		imprimir.imprimir(result);
 	}
 	
 	public void exponenciacao(double num1, double num2) throws IOException {
 		
 		double result = Math.pow(num1, num2);
 		
-		System.out.println();
-		System.out.println("\n"+num1 + " elevado a "+num2+ " = " +result+"\n");
-		System.out.println();
-		pausar.pausar();
-		limparTela.limparTela();
+		imprimir.imprimir(result);
 	}
 	
 	public void logBase10(double num1) throws IOException {
 		
 		double result = Math.log10(num1);
 		
-		System.out.println();
-		System.out.println("\nLogaritmo de " +num1+ " na base 10 = " +result+"\n");
-		System.out.println();
-		pausar.pausar();
-		limparTela.limparTela();
+		imprimir.imprimir(result);
 	}
 	
 	public void logNatural(double num1) throws IOException {
 		
 		double result = Math.log(num1);
 		
-		System.out.println();
-		System.out.println("\nLogaritmo natural de " +num1+ " = " +result+"\n");
-		System.out.println();
-		pausar.pausar();
-		limparTela.limparTela();
+		imprimir.imprimir(result);
 	}
 	
 	public void fatorial(double num1) throws IOException {
@@ -139,11 +103,7 @@ public class Calcula {
 			
 		}
 		
-		System.out.println();
-		System.out.println(aux+"! = " +fat);
-		System.out.println();
-		pausar.pausar();
-		limparTela.limparTela();
+		imprimir.imprimir(fat);
 	}
 	
 	public void mediaAritmetica(int n) throws IOException {
@@ -158,11 +118,7 @@ public class Calcula {
 		}
 		media = soma / n;
 		
-		System.out.println();
-		System.out.println("\nMedia aritmetica = " +media+"\n");	
-		System.out.println();
-		pausar.pausar();
-		limparTela.limparTela();
+		imprimir.imprimir(media);
 		
 		
 	}
@@ -171,22 +127,14 @@ public class Calcula {
 		
 		double sen = catetoOposto / hipotenusa;
 		
-		System.out.println();
-		System.out.println("\nseno = " +sen + "°\n");
-		System.out.println();
-		pausar.pausar();
-		limparTela.limparTela();
+		imprimir.imprimir(sen);
 	}
 	
 	public void cosseno(double catetoAdj, double hipotenusa) throws IOException {
 		
 		double cos = catetoAdj / hipotenusa; 
 		
-		System.out.println();
-		System.out.println("\n cosseno = " +cos + "°\n");
-		System.out.println();
-		pausar.pausar();
-		limparTela.limparTela();
+		imprimir.imprimir(cos);
 		
 	}
 	
@@ -194,11 +142,7 @@ public class Calcula {
 		
 		double tangente = catetoOposto / catetoAdj;
 		
-		System.out.println();
-		System.out.println("\ntangente = " +tangente + "°\n");
-		System.out.println();
-		pausar.pausar();
-		limparTela.limparTela();
+		imprimir.imprimir(tangente);
 	}
 	
 
@@ -208,9 +152,7 @@ public class Calcula {
 		x = y + b;
 		x /= a;
 		
-		System.out.println("\nO valor de X = " +x+"\n");
-		pausar.pausar();
-		limparTela.limparTela();
+		imprimir.imprimir(x);
 	}
 
 	public void equacaoSegundoGrau(double a, double b, double c) throws IOException {
@@ -222,13 +164,11 @@ public class Calcula {
 		} else {
 			x1 = (-b - Math.sqrt(delta))/2*a;
 			x2 = (-b + Math.sqrt(delta))/2*a;
-			System.out.println("x1 = " +x1);
-			System.out.println("x2 = " +x2);
+			imprimir.imprimir(x1, x2);
 		}
 		
 		
-		pausar.pausar();
-		limparTela.limparTela();
+		
 
 		
 	}
